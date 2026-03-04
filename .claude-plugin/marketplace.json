@@ -564,7 +564,7 @@
     {
       "name": "angelos-symbo",
       "source": "./plugins/angelos-symbo",
-      "description": "Use this agent when you need to create or convert prompts using the SYMBO (symbolic) notation system. This agent MUST be activated whenever generating SYMBO prompts or converting existing prompts to symbolic format. Examples:\n\n<example>Context: User wants to create a symbolic prompt for a task management system. user: 'Create a SYMBO prompt for a project task tracker with memory and learning capabilities' assistant: 'I'll use the angelos-symbo agent to create this symbolic prompt following SYMBO notation rules' <commentary>The user is requesting a SYMBO prompt, so the angelos-symbo agent must be used to ensure proper symbolic notation and rule compliance.</commentary></example>\n\n<example>Context: User has a natural language prompt they want converted to SYMBO format. user: 'Convert this prompt to SYMBO notation: You are an AI that helps with code reviews by analyzing code quality, suggesting improvements, and tracking common issues across projects' assistant: 'I need to convert this to SYMBO notation using the angelos-symbo agent' <commentary>Since this involves SYMBO prompt generation/conversion, the angelos-symbo agent must be activated.</commentary></example>",
+      "description": "Use this agent when you need to create or convert prompts using the SYMBO (symbolic) notation system. This agent MUST be activated whenever generating SYMBO prompts or converting existing prompts to symbolic format. It ensures proper symbolic notation and rule compliance for task management systems, code review analyzers, and any other prompt engineering needs. Invoke it when a user requests a new SYMBO prompt, wants to convert natural language prompts to SYMBO notation, or needs symbolic prompt optimization.",
       "version": "1.0.0",
       "author": {
         "name": "normalnormie"
@@ -634,7 +634,7 @@
     {
       "name": "backend-architect",
       "source": "./plugins/backend-architect",
-      "description": "Use this agent when designing APIs, building server-side logic, implementing databases, or architecting scalable backend systems. It focuses on secure, performant backend services. Examples: <example> Context: Designing a new API user: \"We need an API for our social sharing feature\" assistant: \"I’ll design a REST API with authentication and rate limiting using the backend-architect agent.\" <commentary>API design must balance security, scalability, and maintainability.</commentary></example> <example> Context: Database optimization user: \"Our queries are getting slow as we scale\" assistant: \"I’ll use the backend-architect agent to optimize queries and add proper indexes.\" <commentary>Optimization depends on query patterns and indexing.</commentary></example> <example> Context: Authentication system user: \"Add OAuth2 login with Google and GitHub\" assistant: \"I’ll implement secure OAuth2 with correct token handling using the backend-architect agent.\" <commentary>Auth requires careful security design.</commentary></example>",
+      "description": "Use this agent when designing APIs, building server-side logic, implementing databases, or architecting scalable backend systems. It focuses on secure, performant backend services including REST API design with authentication and rate limiting, database query optimization and indexing strategies, and OAuth2/authentication system implementation. Ideal for balancing security, scalability, and maintainability in server-side architecture.",
       "version": "1.0.0",
       "author": {
         "name": "Michael Galpert"
@@ -872,7 +872,7 @@
     {
       "name": "devops-automator",
       "source": "./plugins/devops-automator",
-      "description": "Use this agent when setting up CI/CD pipelines, configuring cloud infrastructure, implementing monitoring, or automating deployments. It focuses on reliable, fast deployment and operations. Examples: <example>Context: Automated deployments user: \"We need automatic deployments when pushing to main\" assistant: \"I'll configure a CI/CD pipeline using the devops-automator agent for testing, build, and deploy.\" <commentary>Automated deployments need clear pipelines and test gates.</commentary></example> <example>Context: Infrastructure scaling user: \"Our app crashes during traffic spikes\" assistant: \"I'll add auto-scaling and load balancing with the devops-automator agent.\" <commentary>Scaling requires resilient infra with monitoring.</commentary></example> <example>Context: Monitoring and alerting user: \"We don't know when production breaks\" assistant: \"I'll use the devops-automator agent to set up monitoring and alerts.\" <commentary>Observability enables fast detection and recovery.</commentary></example>",
+      "description": "Use this agent when setting up CI/CD pipelines, configuring cloud infrastructure, implementing monitoring, or automating deployments. It focuses on reliable, fast deployment and operations. Handles automated deployment pipelines with testing and build gates, infrastructure auto-scaling and load balancing for traffic resilience, and monitoring and alerting setup for fast detection and recovery of production issues.",
       "version": "1.0.0",
       "author": {
         "name": "Michael Galpert"
@@ -928,7 +928,7 @@
     {
       "name": "experiment-tracker",
       "source": "./plugins/experiment-tracker",
-      "description": "PROACTIVELY use this agent when experiments are created, modified, or need analysis. It tracks A/B tests, feature experiments, and improvements in the 6‑day cycle, triggering when feature flags or experimental paths appear. Examples: <example>Context: Adding feature flags user: \"Add a feature flag to test the new onboarding flow\" assistant: \"I'll use the experiment-tracker agent to document the experiment and configure tracking.\" <commentary>Feature flags require proper tracking.</commentary></example> <example>Context: After deploying experiments user: \"The viral sharing feature is live for 10% of users\" assistant: \"I'll use the experiment-tracker agent to monitor performance and record early results.\" <commentary>Live tests need day‑one tracking.</commentary></example> <example>Context: Weekly milestone user: \"It’s been a week since launching the TikTok test\" assistant: \"I'll compile week‑one results.\" <commentary>Checkpoints support data‑driven rollouts.</commentary></example> <example>Context: Product decisions user: \"Should we keep the AI avatar feature?\" assistant: \"I'll review experiment metrics.\" <commentary>Decisions should rely on data.</commentary></example>",
+      "description": "PROACTIVELY use this agent when experiments are created, modified, or need analysis. It tracks A/B tests, feature experiments, and improvements in the 6-day cycle, triggering when feature flags or experimental paths appear. Covers feature flag setup and documentation, live experiment monitoring and early result recording, weekly milestone compilation, and data-driven product decisions on whether to keep, modify, or remove features.",
       "version": "1.0.0",
       "author": {
         "name": "Michael Galpert"
@@ -984,7 +984,7 @@
     {
       "name": "frontend-developer",
       "source": "./plugins/frontend-developer",
-      "description": "Use this agent when building user interfaces, implementing React/Vue/Angular components, managing state, or optimizing frontend performance. It creates responsive, accessible, high‑performance web apps. Examples: <example>Context: Building a new UI user: \"Create a dashboard for displaying user analytics\" assistant: \"I'll use the frontend-developer agent to build a responsive, data-rich analytics dashboard.\" <commentary>Complex UIs need frontend expertise for correctness and speed.</commentary></example> <example>Context: Fixing UI/UX issues user: \"The mobile navigation is broken on small screens\" assistant: \"I'll use the frontend-developer agent to fix the responsive nav so it works across all device sizes.\" <commentary>Responsive issues require strong CSS and mobile-first skills.</commentary></example> <example>Context: Optimizing frontend performance user: \"Our app feels sluggish with large datasets\" assistant: \"I'll use the frontend-developer agent to add virtualization and optimize rendering.\" <commentary>Frontend performance depends on efficient rendering and data handling.</commentary></example>",
+      "description": "Use this agent when building user interfaces, implementing React/Vue/Angular components, managing state, or optimizing frontend performance. It creates responsive, accessible, high-performance web apps. Handles dashboard and data-rich UI creation, responsive design fixes for cross-device compatibility, and frontend performance optimization including virtualization and efficient rendering for large datasets.",
       "version": "1.0.0",
       "author": {
         "name": "Michael Galpert"
@@ -1138,7 +1138,7 @@
     {
       "name": "n8n-workflow-builder",
       "source": "./plugins/n8n-workflow-builder",
-      "description": "Use this agent to design, build, validate, or optimize n8n automation workflows. It specializes in efficient workflow design, validation, and MCP tool integration. Examples: <example>Context: Slack notification for new GitHub issues user: \"I need an n8n workflow that sends a Slack message when a GitHub issue is opened\" assistant: \"I'll use the n8n-workflow-builder agent to design and validate this GitHub‑to‑Slack automation.\" <commentary>Use this agent for workflow design, validation, and deployment.</commentary></example> <example>Context: Workflow failing user: \"My n8n workflow fails at the HTTP Request node\" assistant: \"I'll use the n8n-workflow-builder agent to debug and fix it.\" <commentary>Troubleshooting requires validation and node analysis.</commentary></example> <example>Context: Node guidance user: \"What nodes work best for CSV processing and email reports?\" assistant: \"I'll recommend the best nodes and workflow patterns.\" <commentary>This agent supports node discovery and best practices.</commentary></example>",
+      "description": "Use this agent to design, build, validate, or optimize n8n automation workflows. It specializes in efficient workflow design, validation, and MCP tool integration. Covers workflow creation (e.g., GitHub-to-Slack automations), troubleshooting failing workflows and debugging node errors, and recommending optimal nodes and workflow patterns for tasks like CSV processing and email reports.",
       "version": "1.0.0",
       "author": {
         "name": "Jure Šunić"
@@ -1264,7 +1264,7 @@
     {
       "name": "project-shipper",
       "source": "./plugins/project-shipper",
-      "description": "PROACTIVELY use this agent for launch milestones, release deadlines, and go‑to‑market work. It coordinates launches, manages release execution, and drives GTM strategy within the 6‑day cycle. Examples: <example>Context: Major feature launch user: \"We're launching AI creator tools next week\" assistant: \"I'll use the project-shipper agent to orchestrate launch tasks and prevent gaps.\" <commentary>Launches require cross‑team alignment.</commentary></example> <example>Context: Release planning user: \"We need to ship three updates this sprint\" assistant: \"I'll create a coordinated release plan and balance resources.\" <commentary>Multiple releases need spacing and ownership.</commentary></example> <example>Context: GTM strategy user: \"How should we position the viral video features?\" assistant: \"I'll craft a clear GTM narrative.\" <commentary>Every feature needs a strong story.</commentary></example> <example>Context: Post‑launch monitoring user: \"The collaboration feature launched yesterday\" assistant: \"I'll monitor early metrics and coordinate fast responses.\" <commentary>Monitoring enables quick pivots.</commentary></example>",
+      "description": "PROACTIVELY use this agent for launch milestones, release deadlines, and go-to-market work. It coordinates launches, manages release execution, and drives GTM strategy within the 6-day cycle. Handles major feature launch orchestration, coordinated multi-release sprint planning, go-to-market positioning and narrative crafting, and post-launch metric monitoring with rapid response coordination.",
       "version": "1.0.0",
       "author": {
         "name": "Michael Galpert"
@@ -1292,7 +1292,7 @@
     {
       "name": "rapid-prototyper",
       "source": "./plugins/rapid-prototyper",
-      "description": "Use this agent to rapidly create app prototypes, MVPs, or proof‑of‑concepts within a 6‑day cycle. It specializes in fast scaffolding, trending feature integration, and functional demos. Examples: <example>Context: Starting a new app user: \"Create an app to help people overcome phone anxiety\" assistant: \"I'll use the rapid-prototyper agent to scaffold the app and build an MVP.\" <commentary>Rapid‑prototyper quickly builds foundations.</commentary></example> <example>Context: Testing a trend user: \"I saw a TikTok trend about AI avatars\" assistant: \"I'll use rapid-prototyper to build a quick AI avatar prototype.\" <commentary>Fast prototypes help test trends.</commentary></example> <example>Context: Validating a business idea user: \"Test if users would pay for a subscription curation app\" assistant: \"I'll build a lightweight MVP to validate demand.\" <commentary>Quick prototypes support early validation.</commentary></example> <example>Context: Demo for stakeholders user: \"We need a demo for investors next week\" assistant: \"I'll create a functional demo that shows the vision.\" <commentary>Working demos outperform mockups.</commentary></example>",
+      "description": "Use this agent to rapidly create app prototypes, MVPs, or proof-of-concepts within a 6-day cycle. It specializes in fast scaffolding, trending feature integration, and functional demos. Ideal for new app scaffolding and MVP builds, quick trend-testing prototypes (e.g., AI avatars), lightweight MVPs for business idea validation, and investor-ready functional demos that showcase the product vision.",
       "version": "1.0.0",
       "author": {
         "name": "Michael Galpert"
@@ -1362,7 +1362,7 @@
     {
       "name": "studio-producer",
       "source": "./plugins/studio-producer",
-      "description": "PROACTIVELY use this agent to coordinate teams, manage resources, and optimize studio workflows within 6‑day cycles. It handles cross‑functional alignment, capacity planning, and resolving workflow issues. Examples: <example>Context: Cross‑team collaboration user: \"Design and engineering must work together on the creator dashboard\" assistant: \"I'll use the studio-producer agent to align schedules, define handoffs, and ensure smooth collaboration.\" <commentary>Coordination prevents bottlenecks.</commentary></example> <example>Context: Resource constraints user: \"Three high‑priority features but only two senior engineers\" assistant: \"I'll create an optimal resource plan.\" <commentary>Smart allocation avoids burnout.</commentary></example> <example>Context: Workflow bottleneck user: \"QA is slowing releases\" assistant: \"I'll improve the QA workflow while maintaining quality.\" <commentary>Optimization keeps releases fast.</commentary></example> <example>Context: Sprint coordination user: \"Starting a new 6‑day cycle next Monday\" assistant: \"I'll coordinate kickoff, align goals, and set priorities.\" <commentary>Strong starts drive success.</commentary></example>",
+      "description": "PROACTIVELY use this agent to coordinate teams, manage resources, and optimize studio workflows within 6-day cycles. It handles cross-functional alignment, capacity planning, and resolving workflow issues. Covers cross-team collaboration scheduling and handoff definition, resource allocation under constraints, QA and release workflow optimization, and sprint coordination including kickoff alignment and priority setting.",
       "version": "1.0.0",
       "author": {
         "name": "Michael Galpert"
@@ -1432,7 +1432,7 @@
     {
       "name": "tiktok-strategist",
       "source": "./plugins/tiktok-strategist",
-      "description": "Use this agent to plan TikTok marketing strategies, create viral ideas, run campaigns, and optimize for TikTok’s algorithm. It focuses on trends, shareable moments, and app growth. Examples: <example>Context: Launching a new app user: \"We're launching our phone anxiety app next week. How should we use TikTok?\" assistant: \"I'll use the tiktok-strategist agent to build your launch strategy.\" <commentary>TikTok’s viral reach makes it ideal for launches.</commentary></example> <example>Context: Growing an app user: \"Our meditation app needs more downloads\" assistant: \"I'll create viral ideas using trending formats.\" <commentary>Trends boost downloads.</commentary></example> <example>Context: Creator partnerships user: \"Should we work with TikTok creators?\" assistant: \"I'll identify creators and partnership strategies.\" <commentary>Creators provide authentic reach.</commentary></example> <example>Context: TikTok‑friendly features user: \"How do we make our app more TikTok‑friendly?\" assistant: \"I'll find shareable moments and features users want to post.\" <commentary>TikTok‑worthy moments fuel growth.</commentary></example>",
+      "description": "Use this agent to plan TikTok marketing strategies, create viral ideas, run campaigns, and optimize for TikTok algorithm performance. It focuses on trends, shareable moments, and app growth. Covers app launch TikTok strategies, viral content creation using trending formats, creator partnership identification and outreach strategies, and making app features TikTok-friendly with shareable moments that fuel organic growth.",
       "version": "1.0.0",
       "author": {
         "name": "Michael Galpert"
@@ -1572,7 +1572,7 @@
     {
       "name": "whimsy-injector",
       "source": "./plugins/whimsy-injector",
-      "description": "PROACTIVELY use this agent after any UI/UX change to add playful, delightful moments. It injects joy, surprise, and personality into experiences and should trigger after design updates. Examples: <example>Context: Adding new UI features user: \"I added a new onboarding flow\" assistant: \"Nice! I’ll use the whimsy‑injector agent to enhance it with delightful touches.\" <commentary>New UI is a chance to create joy.</commentary></example> <example>Context: Error or empty states user: \"Set up error handling for payments\" assistant: \"Done. I’ll make errors friendly and low‑friction.\" <commentary>Error states can reduce frustration.</commentary></example> <example>Context: Standard components user: \"Build a loading spinner\" assistant: \"Spinner works—now I’ll make loading fun.\" <commentary>Loading can be memorable.</commentary></example> <example>Context: Reviewing features user: \"Profile page is done\" assistant: \"I’ll audit it for surprise and delight.\" <commentary>Finished features hide delight opportunities.</commentary></example>",
+      "description": "PROACTIVELY use this agent after any UI/UX change to add playful, delightful moments. It injects joy, surprise, and personality into experiences and should trigger after design updates. Covers enhancing new UI features like onboarding flows with delightful touches, making error and empty states friendly and low-friction, adding fun to standard components like loading spinners, and auditing finished features for surprise-and-delight opportunities.",
       "version": "1.0.0",
       "author": {
         "name": "Michael Galpert"
